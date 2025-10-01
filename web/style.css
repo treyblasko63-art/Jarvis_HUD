@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  background: #111;
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+#hud-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+#webcam {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+}
+#hud-canvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  pointer-events: none;
+}
+#status-bar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.6);
+  padding: 10px 30px;
+  border-radius: 20px;
+  z-index: 3;
+  display: flex;
+  gap: 40px;
+  font-size: 1.2em;
+}
